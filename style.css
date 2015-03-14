@@ -39,15 +39,18 @@ body {
   padding: 0;
 }
 
-.row div:first-child .profile-area {
-  text-align: center;
-  margin-top: 50%;
+.nav .text-area {
+  float: left;
 }
 
-.profile-area .profile-image img {
-  width: 96px;
-  height: 96px;
-  margin: 0 auto 10px;
+.nav .profile-image {
+  float: right;
+  margin: 2% 7%;
+}
+
+.nav .profile-image img {
+  width: 64px;
+  height: 64px;
   display: block;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -55,9 +58,9 @@ body {
 }
 
 .text-area p:first-child {
-  color: #e95549;
+  color: #fff;
   font-size: 20px;
-  margin: 18px 0px 4px;
+  margin: 25px 25px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -68,6 +71,27 @@ body {
   color: #cc992c;
   font-weight: 400;
 }
+
+.secondary-nav {
+  margin-top: 76%;
+}
+
+  .secondary-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+    .secondary-nav li {
+      font-size: 21px;
+      font-weight: 300;
+      color: white;
+      opacity: 0.4;
+      padding-left: 42px;
+    }
+  .secondary-nav .active {
+    opacity: 1;
+    background: #414146;
+  }
 
 .card-area {
   height: 100%;
