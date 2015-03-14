@@ -1,0 +1,125 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+  height: 100%;
+  margin: 0;
+  background: #e6e7e9;
+}
+
+.nav {
+  height: 11%;
+  background: #3bAb9d;
+}
+
+  .nav ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+    .nav ul li {
+      position: relative;
+      display: block;
+      float: left;
+      color: white;
+      font-size: 22px;
+      margin: 21px 0 0 32px;
+    }
+
+.row .profile {
+  background: #1a2225;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav .profile-image img {
+  width: 64px;
+  height: 64px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.text-area {
+  float: left;
+}
+
+.text-area p:first-child {
+  color: #e95549;
+  font-size: 20px;
+  margin: 18px 0px 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-area p:nth-child(2) {
+  font-size: 13px;
+  margin: 0;
+  color: #cc992c;
+  font-weight: 400;
+}
+
+.secondary-nav {
+  margin-top: 18%;
+}
+
+  .secondary-nav ul {
+    list-style-type: none;
+  }
+
+    .secondary-nav li {
+      font-size: 21px;
+      font-weight: 300;
+      color: white;
+      opacity: 0.4;
+    }
+  .secondary-nav .active {
+    opacity: 1;
+  }
+
+.card-area {
+  height: 100%;
+  background: #e6e7e9;
+}
+
+.card-area .card-container {
+  height: 81%;
+  margin-top: 7%;
+  width: 67%;
+  margin-left: 17%;
+}
+
+.card-area .card-container .card-content {
+  background: whitesmoke;
+  border: 1px solid #A2A3A2;
+  padding: 0% 4% 73%;
+  font-weight: 400;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.card-area .card-container .card-content h1:first-child {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.card-area .card-container .card-content h4:nth-child(2) {
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.card-area .card-container .card-content h4:nth-child(3) {
+  text-align: center;
+  font-weight: 800;
+}
+
+.card-area .card-container .card-content .card-body {
+  margin-top: 30px;
+}
