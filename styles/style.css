@@ -223,6 +223,13 @@ body {
   margin-top: 76%;
 }
 
+  .second .secondary-nav .navigation-header {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10%;
+  }
+
   .second .secondary-nav ul {
     list-style-type: none;
     padding-left: 0;
