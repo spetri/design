@@ -1,0 +1,221 @@
+@import url('/styles/about.css');
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.active {
+  color: white !important;
+}
+
+  header .nav-content {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+    header .nav-content nav {
+      width: 100%;
+      display: inline-block;
+      height: 34px;
+      font-weight: 600;
+      margin: 40px 0;
+      font-size: 17px;
+    }
+
+      header nav ul {
+        list-style-type: none;
+        float: left;
+        margin-left: 42px;
+      }
+
+        header nav ul li {
+          display: inline-block;
+          margin-right: 20px;
+          color: gray;
+          font-weight: 100;
+        }
+
+        header nav ul li:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+.banner-container {
+  background: url(images/tea-min.jpg);
+  height: 600px;
+  background-size: cover;
+}
+
+  .banner-container .banner-content {
+    height: 600px;
+    background: black;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+    .banner-container .banner-content .heading {
+      padding: 198px 281px;
+      height: 100%;
+      width: 69%;
+    }
+
+      .banner-container .banner-content .heading h1 {
+        font-size: 40px;
+        color: #fff;
+        font-weight: 100;
+      }
+
+      .banner-container .banner-content .heading p {
+        color: #ddd;
+        font-size: 17px;
+      }
+
+.capabilities {
+  height: 400px;
+  padding-top: 21px;
+}
+
+  .capabilities ul {
+    list-style-type: none;
+  }
+
+  .capabilities ul li:first-child {
+    margin-left: 0px;
+  }
+
+  .capabilities ul li {
+    text-align: center;
+    width: 33%;
+    float: left;
+  }
+
+  .capability-content {
+    padding: 0 60px;
+  }
+
+    .capabilities .icon-desktop {
+      background: url(icons/othericons_com.svg);
+      width: 152px;
+      height: 171px;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-size: 1300px;
+    }
+
+    .capabilities li:first-child .icon-desktop {
+      background-position: -152px -3px;
+    }
+
+    .capabilities li:nth-child(2) .icon-desktop {
+      background-position: 0 0;
+    }
+
+    .capabilities li:nth-child(3) .icon-desktop {
+      background-position: -765px 21px;
+    }
+
+    .capabilities h3 {
+      color: #484F58;
+      font-size: 20px;
+      font-weight: normal;
+      font-family: 'Open Sans', sans-serif;
+      margin: 36px 0 12px;
+    }
+
+    .capabilities p {
+      line-height: 26px;
+      padding: 0 15px;
+      color: rgba(33,41,52,.6);
+      font-weight: 300;
+      font-size: 15px;
+      font: 18px/27px 'Gentium Basic', serif
+    }
+
+
+.want-more {
+  height: 200px;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+}
+
+  .want-more .col-md-12 {
+    height: 100%;
+    text-align: center;
+  }
+
+  .want-more .col-md-12 a {
+    border: 3px solid gray;
+    border-radius: 60px;
+    line-height: 46px;
+    padding: 0 20px;
+    background: #FFF;
+    cursor: pointer;
+    color: gray;
+    font-size: 18px;
+    transition: .2s all linear;
+    margin: 5% 2%;
+  }
+
+    .want-more .col-md-12 a:hover {
+      border-color: black;
+      color: black; 
+      -webkit-transform: translateX(5px);
+      -moz-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+      transform: translateX(5px);
+    }
+
+  .want-more .col-md-12 .btn::after {
+    border-style: solid;
+    border-width: 2px 2px 0px 0;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    top: 18px;
+    vertical-align: top;
+    left: 5px;
+    transform: rotate(45deg);
+    width: 13px;
+  }
+
+footer {
+  height: 300px;
+  padding: 45px 0 35px 0;
+  background: #0b121d;
+}
+
+  footer ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 17px;
+  }
+
+  footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }

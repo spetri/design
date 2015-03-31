@@ -1,0 +1,42 @@
+/* About Page */
+
+body {
+  background: #EFF2F5;
+}
+
+.about-banner-container {
+  background: url(images/keyboard.jpg);
+  height: 330px;
+  background-size: cover;
+}
+
+  .about-banner-container .about-banner-content {
+    height: 330px;
+    background: black;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .about-banner-container .about-banner-content .about-heading {
+    padding: 150px 281px;
+    height: 100%;
+    width: 69%;
+  }  
+
+    .about-banner-container .about-banner-content .about-heading h1 {
+      font-size: 40px;
+      color: #fff;
+      font-weight: 100;
+    }
+
+.basic-info .col-md-12 {
+  height: 600px;
+  background: #EFF2F5;
+}
+
+.basic-info .col-md-12 .basic-info-inner {
+  background: #fff;
+  height: 600px;
+  border: 2px solid #DCE3E8;
+  border-top: 0;
+  border-bottom: 0;
+}
