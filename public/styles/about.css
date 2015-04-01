@@ -4,6 +4,19 @@ body {
   background: #EFF2F5;
 }
 
+hr {
+  margin: 0;
+  border-top: 1px solid #7cddca;
+}
+
+.col-md-9 {
+  padding: 0;
+}
+
+.col-md-3 {
+  padding: 0;
+}
+
 .about-banner-container {
   background: url(images/keyboard.jpg);
   height: 330px;
@@ -29,14 +42,239 @@ body {
     }
 
 .basic-info .col-md-12 {
-  height: 600px;
-  background: #EFF2F5;
+  height: 689px;
+  background: #1a2225;
 }
 
-.basic-info .col-md-12 .basic-info-inner {
-  background: #fff;
-  height: 600px;
-  border: 2px solid #DCE3E8;
-  border-top: 0;
-  border-bottom: 0;
+
+    .basic-info .col-md-12 .about-me-outer {
+      padding: 6% 20%;
+      height: 100%;
+      text-align: center;
+    }
+
+    .basic-info .col-md-12 .about-me-outer .fa-home {
+      font-size: 58px;
+      padding-bottom: 20px;
+      color: #8EC9D2;
+    }
+
+
+    .basic-info .basic-info-body p {
+      font: 18px/26px 'Muli', sans-serif;
+      text-align: left;
+      color: #B7B8BF;
+    }
+
+   .want-more-container .want-more {
+    border-top: none;
+    background: #1a2225;
+   } 
+
+   .want-more-container .want-more a {
+      display: block;
+      background: #1a2225 !important;
+   }
+
+   .want-more-container .want-more a:hover {
+      background: #fff !important;
+   }
+
+.nav {
+  background: #1a2225;
+  min-height: 800px;
+}
+
+  .nav .left-side-nav {
+    margin-top: 50%;
+  }
+
+  .nav .left-side-nav p {
+    margin-left: 25%;
+    font-size: 30px;
+    font-weight: 100;
+    color: #7cddca;
+  }
+
+  .nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav .left-side-nav ul li {
+    font-size: 23px;
+    padding: 1% 34%;
+    cursor: pointer;
+  }
+
+  .nav ul li:hover {
+    background: #414146;
+  }
+
+/* timeline */
+
+
+.timeline-row {
+  background-color: #1a2225;
+  height: 1080px;
+}
+
+a {
+  color: #00c;
+  text-decoration: none;
+}
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+.timeline {
+  list-style: none;
+  position: relative;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAABCAYAAAAMwoR9AAAAEElEQVQIW2O866jyn4EAAABN6AJDG4v3ZAAAAABJRU5ErkJggg==);
+  background-size: .5em 100%;
+  background-repeat: repeat-y;
+  background-position: 1.5em;
+  padding-left: 4em;
+  margin: 83px 145px;
+  font-family: 'Ovo';
+  font-size: 20px;
+}
+
+
+.timeline ul.description {
+  list-style-type: circle;
+  margin-top: 8px;
+}
+
+.timeline ul.description li {
+  font-size: 15px;
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+.timeline ul.description li:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+  .timeline {
+    background-position: center;
+    padding-left: 0;
+  }
+  .timeline:before, .timeline:after {
+    left: calc(50% - .25rem);
+  }
+  .timeline > .event {
+    width: calc(50% - 33px);
+    position: relative;
+  }
+  .timeline > .event:nth-child(odd):before {
+    left: calc(100% + 2.30rem);
+  }
+  .timeline > .event:nth-child(even) {
+    position: absolute;
+    right: 0;
+    margin-top: -302px;
+  }
+  .timeline > .event:nth-child(even):before {
+    left: -4.45rem;
+  }
+
+  .timeline > .event:nth-child(4) {
+    margin-top: -28px;
+  }
+}
+
+.event {
+  padding-bottom: 24px;
+}
+
+  .event:before {
+    content: '';
+    border: 4px solid #7cddca;
+    border-radius: 21%;
+    position: absolute;
+    padding: 7px;
+    background-color: #1a2225;
+    background-repeat: no-repeat;
+  }
+
+.title {
+  font-weight: 600;
+  color: #7cddca;
+}
+
+.company {
+  font-style: italic;
+  border-bottom: 1px solid #bbb;
+  color: #FFB440;
+  font-size: 16px;
+}
+  .company:before {
+    content: '@ ';
+    color: #fff;
+  }
+
+.dates {
+  font-size: 15px;
+  float: right;
+  color: #fff;
+}
+
+@media (min-width: 500px) {
+  .description {
+    margin-top: .5em;
+    color: #fff;
+  }
+}
+
+.button {
+    display: block;
+  text-align: center;
+  margin-top: .5em;
+  background: #A54A4F;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 3px solid #A54A4F;
+}
+
+.button:before,
+.button:after {
+  content: '\25B2';
+  position: absolute;
+}
+
+.button:before {
+  left: 2em;
+}
+
+.button:after {
+  right: 2em;
+}
+
+.button:hover {
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+  background-color: #bbb;
+}
+
+.details {
+  font-size: 12px;
+  text-indent: 2em;
+  color: #FDA096;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer p {
+  text-align: center;
+  color: gray;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 10px;
 }

@@ -66,13 +66,11 @@ header {
 
   .banner-container .banner-content {
     height: 600px;
-    background: black;
     background: rgba(0, 0, 0, 0.6);
   }
 
     .banner-container .banner-content .heading {
       padding: 198px 281px;
-      height: 100%;
       width: 69%;
     }
 
@@ -174,8 +172,8 @@ header {
   }
 
     .want-more .col-md-12 a:hover {
-      border-color: black;
-      color: black; 
+      border-color: #1a2225;
+      color: #1a2225; 
       -webkit-transform: translateX(5px);
       -moz-transform: translateX(5px);
       -ms-transform: translateX(5px);
@@ -198,7 +196,7 @@ header {
 
 footer {
   height: 300px;
-  padding: 45px 0 35px 0;
+  padding: 45px 0px 63px 0;
   background: #0b121d;
 }
 
@@ -218,4 +216,12 @@ footer {
   footer ul li:hover {
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  footer p {
+    text-align: center;
+    color: gray;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 10px;
   }
