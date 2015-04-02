@@ -1,10 +1,10 @@
-require "bundler/setup"
+require 'bundler/setup'
 require 'sinatra'
 
 get '/' do
-  File.read(File.join('public', 'index.html'))
+  erb :index
 end
 
 get '/about' do
-  File.read(File.join('public', 'about.html'))
+  erb :about
 end

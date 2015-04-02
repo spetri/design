@@ -7,7 +7,6 @@ html {
 
 body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -49,14 +48,44 @@ header {
         header nav ul li {
           display: inline-block;
           margin-right: 20px;
-          color: gray;
-          font-weight: 100;
         }
 
-        header nav ul li:hover {
-          text-decoration: underline;
-          cursor: pointer;
-        }
+          header nav ul li a {
+            color: gray;
+            font-size: 20px;
+            font-weight: 100;
+          }
+
+          header nav ul li a:hover {
+            text-decoration: none;
+            cursor: pointer;
+            color: lightgray;
+          }
+
+          header nav ul li:nth-child(3) {
+            margin: 0
+          }
+
+          header nav ul li:nth-child(5) {
+            margin: 0;
+          }
+
+          header nav ul li:nth-child(3) div.divider {
+            border: 1px solid #A54A4F;
+            padding: 12px 3px;
+            margin: 0;
+            display: inline;
+            border-right: 0;
+          }
+
+          header nav ul li:nth-child(6) div.divider {
+            border: 1px solid #A54A4F;
+            padding: 12px 3px;
+            margin: 0;
+            display: inline;
+            border-left: 0; 
+          }
+
 
 .banner-container {
   background: url(images/tea-min.jpg);
@@ -71,7 +100,7 @@ header {
 
     .banner-container .banner-content .heading {
       padding: 198px 281px;
-      width: 69%;
+      width: 81%;
     }
 
       .banner-container .banner-content .heading h1 {
@@ -86,16 +115,13 @@ header {
       }
 
 .capabilities {
-  height: 400px;
-  padding-top: 21px;
+  height: 445px;
+  padding-top: 48px;
 }
 
   .capabilities ul {
     list-style-type: none;
-  }
-
-  .capabilities ul li:first-child {
-    margin-left: 0px;
+    padding: 0;
   }
 
   .capabilities ul li {
@@ -105,28 +131,28 @@ header {
   }
 
   .capability-content {
-    padding: 0 60px;
+    padding: 0 14px;
   }
 
     .capabilities .icon-desktop {
       background: url(icons/othericons_com.svg);
       width: 152px;
-      height: 171px;
+      height: 137px;
       margin: 0 auto;
       background-repeat: no-repeat;
-      background-size: 1300px;
+      background-size: 1314px;
     }
 
     .capabilities li:first-child .icon-desktop {
-      background-position: -152px -3px;
+      background-position: -156px -32px;
     }
 
     .capabilities li:nth-child(2) .icon-desktop {
-      background-position: 0 0;
+      background-position: -780px -14px;
     }
 
     .capabilities li:nth-child(3) .icon-desktop {
-      background-position: -765px 21px;
+      background-position: -626px -172px;
     }
 
     .capabilities h3 {
