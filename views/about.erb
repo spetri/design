@@ -15,16 +15,24 @@
   <body>
 
     <header>
-      <div class="nav-content">
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about" class="active">About</a></li>
-            <li><div class="divider"></div></li>
-            <li><a href="/resume/sabbapetri_resume.pdf" target="_blank">View Resume</a></li>
-            <li><a href="mailto:sabbap@gmail.com?Subject=Hi there!" target="_top">Contact Me</a></li>
-            <li><div class="divider"></div></li>
-          </ul>
+      <div>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="/" data-toggle="tab" class="active"><i class="fa fa-heart-o"></i></a></li>
+              <li><a href="/about" data-toggle="tab">About</a></li>
+              <li><a href="/resume/sabbapetri_resume.pdf" target="_blank">View Resume</a></li>
+              <li><a href="mailto:sabbap@gmail.com?Subject=Hi there!" target="_top" data-toggle="tab">Contact Me</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -35,112 +43,146 @@
         </div>
       </div>
     </div>
-    <div class="row nav">
-      <div class="col-md-3">
-        <div class="left-side-nav">
-          <p>Navigation</p>
-          <ul>
-            <li class="active">About</li>
-            <li>Work Timeline</li>
-          </ul>
-          <div class="want-more-container">
-            <div class="row want-more">
-              <div class="col-md-12">
-                <a href="/resume/sabbapetri_resume.pdf" target="_blank" class="btn btn-default">View Resume</a>
-                <a class="btn btn-default" href="mailto:sabbap@gmail.com?Subject=Hi there!" target="_top">Contact Me</a>
-              </div>
-            </div>
+    <div class="row work">
+    <h1>Worked From Large Organizations</h1>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <div class="browser">
+          <div class="top">
+            <span class="buttons">
+              <span class="button"></span>
+              <span class="button"></span>
+              <span class="button"></span>
+            </span>
+            <span class="bar">
+              <span>https://bahai.bwc.org/ 
+                <span class="detail">- Baha'i World Centre</span>
+              </span>
+            </span>
           </div>
+          <div class="bwc"></div>
         </div>
       </div>
-      <div class="col-md-9">
-        <div class="row basic-info">
-          <div class="col-md-12">
-            <div class="basic-info-inner">
-              <div class="about-me-outer">
-                <div class="fa fa-home"></div>
-                  <div class="basic-info-body">
-                    <p>I graduated with two degrees: <span>Computer Science</span> and <span>Art History</span>.</p>
-                    <p>After university, I took my <span>Computer Science</span> degree and spent a few years internationally as a full-stack developer. We solved challenging technical problems, while taking part in the development and evolution of our cultural processes. What started as a mishmash of segmented teams evolved into one unified team, learning to perform stand-ups, pair programming, estimation practices, and much more, all under an Agile umbrella.</p>
-                    <p>Over time, my vision and scope began to broaden, as I enjoyed looking at product vision and how products could be enhanced from a market viewpoint. I also began to take strong interest in the other teams working with the developers, forming stronger bonds between them. Beginning to wield my <span>Art History</span> background, I analyzed and interpreted user workflows, consulted with the business to elicit requirements / discussed user experience, and took a fresh look at the business processes that surrounded our products.</p>
-                    <p>Coming back to my California home, I've taken the knowledge gained and put it to good use. While I will always write code and continue to contribute to open-source projects, my focus is now toward product management and design.</p>
-                  </div>
-              </div>
-            </div>
-            <div class="row timeline-row hide">
-              <ol class="timeline">
+      <div class="col-md-4">
+        <div class="work-detail">
+          <h4>Baha'i World Centre</h4>
+          <p>The worldwide center of the Baha’i International Community, a UN-recognized NGO administrating affairs for over 184 countries and territories with over 6 million members.</p>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
 
-                <!-- event one -->
-                <li class="event">
-                  <p class="title">Technical Product Development & Design</p>
-                  <p class="dates">November 2014 - Present</p>
-                  <p class="company">Independent Consultant</p>
-                  <p class="details hide">
-                    Working with multiple startups to elevate their business practices, developing relations with their clients to gather requirements, designing and writing specification documents, and then implementing those business needs.
-                  </p>
-                  <span class="button more">View Details</span>
-                  <ul class="description">
-                    <li>Elevated customer and vendor relations by meeting with clients in person, building relationships while interviewing and gathering requirements, and writing specs / stories for other teams.</li>
-                    <li>Fully redesigned, built, tested, and marketed company websites, based heavily on user interaction and expectations, bringing in higher traffic and sales.</li>
-                    <li>Developed core features, including a form-validation framework, multiple mathematical libraries, responsive design, heavy resource loading and server management, and more. Entirely focused on beautiful design and a more unified user experience.</li>
-                  </ul>
-                </li>
+    <hr />
 
-                <!-- event two -->
-                <li class="event">
-                  <p class="title">Applications Engineer & Business Analysis</p>
-                  <p class="dates"> September 2011 - August 2014</p>
-                  <p class="company">Baha'i World Center</p>
-                  <p class="details hide">
-                    The worldwide center of the Baha’i International Community, a UN-recognized NGO administrating affairs for over 184 countries and territories with over 6 million members.
-                  </p>
-                  <span class="button more">View Details</span>
-                   <ul class="description">
-                    <li>Developed multiple internal web applications, C# server-side and heavy JavaScript client-side, to assist and accompany the business processes of many individuals spread across multiple departments and offices.</li>
-                    <li>Employed both waterfall/agile processes, i.e. test-driven development, pair programming, source code control practices (Git/SVN), and test/production deployment practices.</li>
-                    <li>Maintained and supported legacy technologies, i.e. VB6 with COM, Classic ASP websites.</li>
-                    <li>Involved in all aspects of applications, from gathering initial business requirements and producing documentation to modeling the application architecture.</li>
-                    <li>Managed business expectations and collaborated with multiple departments and teams to transform hundreds of requirements into user stories and estimated them in an agile environment.</li>
-                  </ul>
-                </li>
-
-                <!-- event three -->
-                <li class="event">
-                  <p class="title">Video Technician</p>
-                  <p class="dates">Fall 2008 - Winter 2011</p>
-                  <p class="company">University of California, Santa Cruz</p>
-                  <p class="details hide">
-                    The UCSC Media Centre supports the study and teaching of film and digital media, where students can view media from dozens of video workstations and faculty can borrow thousands of items for classroom use.
-                  </p>
-                   <span class="button more">View Details</span>
-                    <ul class="description">
-                      <li>Managed and operated a large film archive, helping patrons acquire varying films needed.</li>
-                      <li>Controlled a large environment of patrons, while providing high quality customer service.</li>
-                      <li>Organized sizable amounts of media into various databases for increased worker efficiency.</li>
-                    </ul>
-                </li>
-
-                <!-- event four -->
-                <li class='event'>
-                  <p class='title'>Data Management Intern</p>
-                  <p class='dates'>Summer 2007</p>
-                  <p class='company'>SPG Solar</p>
-                  <p class='details hide'>
-                    SPG Solar designs, engineers, installs, and maintains commercial solar projects and markets a world-class tracker technology to solar developers and integrators around the world.
-                  </p>
-                  <span class="button more">View Details</span>
-                  <ul class="description">
-                    <li>Transferred data input from various networks into one large streamlined database to provide enhanced user familiarity and added depth for customer preferences.</li>
-                    <li>Crunched for time, categorized systems of physical files into a more accessible filing system to increase work productivity, completed a few weeks before set deadline.</li>
-                    <li>Built, benchmarked, and tested solar panel systems, as well as successfully troubleshooted many system wiring issues in the field nearly 95% of the time.</li>
-                  </ul>
-                </li>
-              </ol>
-            </div>
+    <div class="row work">
+    <h1>To Small, Thriving Startups</h1>
+      <div class="col-md-1"></div>
+      <div class="col-md-4">
+        <div class="work-detail">
+          <h4>GitLab B.V</h4>
+          <p>YC-Backed GitLab is a feature-rich Git repository management, issue-tracking, wiki system, rivaling GitHub, Atlassian, etc.</p>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <div class="browser">
+          <div class="top">
+            <span class="buttons">
+              <span class="button"></span>
+              <span class="button"></span>
+              <span class="button"></span>
+            </span>
+            <span class="bar">
+              <span>http://gitlab.com/ 
+                <span class="detail">- GitLab B.V.</span>
+              </span>
+            </span>
           </div>
+          <div class="gitlab"></div>
         </div>
       </div>
     </div>
+
+    <hr />
+
+    <div class="row work">
+    <h1>And Open-Source Projects</h1>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <div class="browser">
+          <div class="top">
+            <span class="buttons">
+              <span class="button"></span>
+              <span class="button"></span>
+              <span class="button"></span>
+            </span>
+            <span class="bar">
+              <span>https://forekast.com/ 
+                <span class="detail">- Forekast</span>
+              </span>
+            </span>
+          </div>
+          <div class="forekast"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="work-detail">
+          <h4>Forekast</h4>
+          <p>Viewed as the "Crowdsourced Calendar of the Internet", Forekast displays upcoming global and national (and soon, local) events, provided by the community at large.</p>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+
+    <hr />
+
+    <div class="row loves">
+      <div class="col-md-12">
+      <h1>Interests & Passions</h1>
+        <ul>
+          <div class="col-md-3">
+            <li>
+              <div class="loves-content">
+                <div class="icon-area">
+                  <svg class="svg-icon" viewBox="0 0 1024 1024">
+                    <path class="svg-style" d="M0 896v-736h992v736h-992zM192 576h-32v-384h-128v672h160v-288zM384 576h-32v-384h-96v384h-32v288h160v-288zM576 576h-32v-384h-96v384h-32v288h160v-288zM640 192v384h-32v288h160v-288h-32v-384h-96zM960 192h-128v384h-32v288h160v-672z"></path>
+                </svg>
+                </div>
+                <h3>Playing & Performing Piano</h3>
+                <p>Since my early days, I absolutely love practicing a range of music, from Bach preludes, to intricate Rachmaninoff preludes, to beautiful Einaudi suites.</p>
+              </div>
+            </li>
+          </div>
+          <div class="col-md-3">
+            <li>
+              <div class="loves-content">
+                <div class="icon-area">
+                  <svg class="svg-icon" viewBox="0 0 1024 1024">
+                    <path class="svg-style" d="M896 0h-896v1024h1024v-896l-128-128zM512 128h128v256h-128v-256zM896 896h-768v-768h64v320h576v-320h74.978l53.022 53.018v714.982z"></path>
+                </svg>
+                </div>
+                <h3>Pushing Great Code</h3>
+                <p>I love to push, churn, and contribute code for companies and organizations who have the mission to change people's lives for the better.</p>
+              </div>
+            </li>
+          </div>
+          <div class="col-md-3">
+            <li>
+              <div class="loves-content">
+                <div class="icon-area">
+                  <svg class="svg-icon" viewBox="0 0 1024 1024">
+                    <path class="svg-style" d="M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM512 960.002c-62.958 0-122.872-13.012-177.23-36.452l233.148-262.29c5.206-5.858 8.082-13.422 8.082-21.26v-96c0-17.674-14.326-32-32-32-112.99 0-232.204-117.462-233.374-118.626-6-6.002-14.14-9.374-22.626-9.374h-128c-17.672 0-32 14.328-32 32v192c0 12.122 6.848 23.202 17.69 28.622l110.31 55.156v187.886c-116.052-80.956-192-215.432-192-367.664 0-68.714 15.49-133.806 43.138-192h116.862c8.488 0 16.626-3.372 22.628-9.372l128-128c6-6.002 9.372-14.14 9.372-22.628v-77.412c40.562-12.074 83.518-18.588 128-18.588 70.406 0 137.004 16.26 196.282 45.2-4.144 3.502-8.176 7.164-12.046 11.036-36.266 36.264-56.236 84.478-56.236 135.764s19.97 99.5 56.236 135.764c36.434 36.432 85.218 56.264 135.634 56.26 3.166 0 6.342-0.080 9.518-0.236 13.814 51.802 38.752 186.656-8.404 372.334-0.444 1.744-0.696 3.488-0.842 5.224-81.324 83.080-194.7 134.656-320.142 134.656z"></path>
+                </svg>
+                </div>
+                <h3>Developing Communities</h3>
+                <p>If you don't find me pushing code or playing piano, you may find me in communities, working alongside others to grow communities organically through various processes of social and moral development.</p>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    
     <footer class="row footer" id="footer-particles">
       <ul>
         <a href="/"><li>Home</li></a>

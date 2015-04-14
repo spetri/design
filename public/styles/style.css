@@ -7,13 +7,38 @@ html {
 
 body {
   height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background: #212221;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  z-index: 99;
-  width: 100%;
+@media(min-width: 1040px) {
+  .capabilities ul li {
+    width: 33%;
+  }
+}
+
+@media(max-width: 1040px) {
+    .capabilities {
+    height: 992px !important;
+  }
+}
+
+@media(max-width: 755px) {
+  .capabilities {
+      height: 1131px !important
+  }
+
+  header nav ul li a {
+    font-size: 16px !important;
+  }
+
+  .banner-container .banner-content {
+    padding-top: 100px !important;
+  }
+
+  .banner-container .banner-content .heading {
+    padding: 16% 1% !important;
+  }
 }
 
 .row {
@@ -24,68 +49,30 @@ header {
   color: white !important;
 }
 
-  header .nav-content {
-    width: 1000px;
-    margin: 0 auto;
-    position: relative;
+header .navbar-default {
+  padding: 30px;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  border: transparent;
+}
+
+header .active {
+    color: white;
   }
 
-    header .nav-content nav {
-      width: 100%;
-      display: inline-block;
-      height: 34px;
-      font-weight: 600;
-      margin: 40px 0;
-      font-size: 17px;
+  header .navbar-nav {
+    padding-left: 4%;
+  }
+
+    header .navbar-nav li a:hover {
+      text-decoration: underline !important;
+      color: white !important;
     }
 
-      header nav ul {
-        list-style-type: none;
-        float: left;
-        margin-left: 42px;
-      }
-
-        header nav ul li {
-          display: inline-block;
-          margin-right: 20px;
-        }
-
-          header nav ul li a {
-            color: gray;
-            font-size: 20px;
-            font-weight: 100;
-          }
-
-          header nav ul li a:hover {
-            text-decoration: none;
-            cursor: pointer;
-            color: lightgray;
-          }
-
-          header nav ul li:nth-child(3) {
-            margin: 0
-          }
-
-          header nav ul li:nth-child(5) {
-            margin: 0;
-          }
-
-          header nav ul li:nth-child(3) div.divider {
-            border: 1px solid #A54A4F;
-            padding: 12px 3px;
-            margin: 0;
-            display: inline;
-            border-right: 0;
-          }
-
-          header nav ul li:nth-child(6) div.divider {
-            border: 1px solid #A54A4F;
-            padding: 12px 3px;
-            margin: 0;
-            display: inline;
-            border-left: 0; 
-          }
-
+    header .navbar-nav li:first-child a {
+      font-size: 20px;
+    }
 
 .banner-container {
   background: url(images/tea-min.jpg);
@@ -93,15 +80,16 @@ header {
   background-size: cover;
 }
 
-  .banner-container .banner-content {
-    height: 600px;
+  .banner-container .overlay {
+    height: 100%;
     background: rgba(0, 0, 0, 0.6);
   }
 
-    .banner-container .banner-content .heading {
-      padding: 198px 281px;
-      width: 81%;
-    }
+  .banner-container .banner-content {
+    height: 100%;
+    padding-top: 200px;
+    padding-left: 83px;
+  }
 
       .banner-container .banner-content .heading h1 {
         font-size: 40px;
@@ -116,7 +104,8 @@ header {
 
 .capabilities {
   height: 445px;
-  padding-top: 48px;
+  padding-top: 66px;
+  border-top: 1px solid black;
 }
 
   .capabilities ul {
@@ -126,7 +115,6 @@ header {
 
   .capabilities ul li {
     text-align: center;
-    width: 33%;
     float: left;
   }
 
@@ -135,28 +123,20 @@ header {
   }
 
     .capabilities .icon-desktop {
-      background: url(icons/othericons_com.svg);
       width: 152px;
       height: 137px;
       margin: 0 auto;
-      background-repeat: no-repeat;
-      background-size: 1314px;
     }
 
-    .capabilities li:first-child .icon-desktop {
-      background-position: -156px -32px;
-    }
-
-    .capabilities li:nth-child(2) .icon-desktop {
-      background-position: -780px -14px;
-    }
-
-    .capabilities li:nth-child(3) .icon-desktop {
-      background-position: -626px -172px;
+    .capabilities .icon-desktop .svg-style {
+      fill: none;
+      stroke-width: 1px;
+      stroke: #865;
+      vector-effect: non-scaling-stroke;
     }
 
     .capabilities h3 {
-      color: #484F58;
+      color: #865;
       font-size: 20px;
       font-weight: normal;
       font-family: 'Open Sans', sans-serif;
@@ -166,7 +146,7 @@ header {
     .capabilities p {
       line-height: 26px;
       padding: 0 15px;
-      color: rgba(33,41,52,.6);
+      color: #9d9e9d;
       font-weight: 300;
       font-size: 15px;
       font: 18px/27px 'Gentium Basic', serif
@@ -175,8 +155,8 @@ header {
 
 .want-more {
   height: 200px;
-  background: #fafafa;
-  border-top: 1px solid #eee;
+  background: #212221;
+  border-bottom: 1px solid black;
 }
 
   .want-more .col-md-12 {
