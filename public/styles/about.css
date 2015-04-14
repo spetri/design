@@ -59,13 +59,16 @@ header .active {
     }
 
 .loves {
-  height: 500px;
+  padding: 50px 0;
   border-top: 1px solid black;
+  background: rgba(241, 90, 36, 1);
 }
 
   .loves .col-md-12 h1 {
     text-align: center;
     padding-bottom: 50px;
+    color: white;
+    font-family: "Muli", serif;
   }
 
   .loves ul {
@@ -87,12 +90,12 @@ header .active {
     .loves .icon-area .svg-style {
       fill: black;
       stroke-width: 1px;
-      stroke: gray;
+      stroke: rgba(241, 90, 36,1);
       vector-effect: non-scaling-stroke;
     }
 
     .loves h3 {
-      color: #865;
+      color: #fff;
       font-size: 20px;
       font-weight: normal;
       font-family: 'Open Sans', sans-serif;
@@ -102,10 +105,10 @@ header .active {
     .loves p {
       line-height: 26px;
       padding: 0 15px;
-      color: #9d9e9d;
+      color: black;
       font-weight: 300;
       font-size: 15px;
-      font: 18px/27px 'Gentium Basic', serif
+      font-family: 'Muli', sans-serif;
     }
 
 
@@ -126,6 +129,7 @@ header .active {
 .work h1 {
   text-align: center;
   padding: 35px 0 26px 0;
+  font-family: "Muli", serif;
 }
 
   .work .col-md-12 {
@@ -137,7 +141,7 @@ header .active {
   }  
 
   .work .browser {
-    width: 490px;
+    width: auto;
     height: 490px;
     top: 20px;
     border: 1px solid #ccc;
@@ -277,12 +281,18 @@ footer p {
   font-size: 10px;
 }
 
-@media (max-width: 540px) {
+@media (min-width: 970px) {
   .work .browser {
-    width: 369px;
+    width: 490px;
   }
 
   .work .browser .bar {
-    width: 279px;
+    width: 394px;
   }
+}
+
+@media (max-width: 457px) {
+ .work .browser .bar {
+    width: auto;
+  } 
 }
