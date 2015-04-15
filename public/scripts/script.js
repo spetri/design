@@ -6,13 +6,13 @@
   };
 
   var setupEventHandlers = function() {
-    $('.work .browser').on('mouseenter', beginScrollAnimation);
-    $('.work .browser').on('mouseleave', endScrollAnimation);
+    
   };
 
   var beginScrollAnimation = function(e) {
     $(e.target).animate({
-        "background-position-y": "-70px"
+//        "background-position-y": "-70px"
+        //"transform": "translate(540px,-200px)"
     }, 1000);
   }
 

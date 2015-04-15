@@ -8,7 +8,7 @@ html {
 body {
   height: 100%;
   font-family: "Open Sans", sans-serif;
-  background: #212221;
+  background: #fff;
 }
 
 @media(min-width: 1040px) {
@@ -41,6 +41,11 @@ body {
   }
 }
 
+.in {
+  background: rgba(0, 0, 0, 0.6);
+  transition: 1s ease;
+}
+
 .row {
   margin: 0 !important;
 }
@@ -57,12 +62,12 @@ header .navbar-default {
   border: transparent;
 }
 
-header .active {
+  header .active {
     color: white;
   }
 
   header .navbar-nav {
-    padding-left: 4%;
+    padding-left: 10%;
   }
 
     header .navbar-nav li a:hover {
@@ -72,6 +77,12 @@ header .active {
 
     header .navbar-nav li:first-child a {
       font-size: 20px;
+    }
+
+    header .navbar-default .navbar-nav>li:not(:first-child)>a {
+      color: #777777;
+      font-family: "Muli";
+      font-size: 12px;
     }
 
 .banner-container {
@@ -85,10 +96,9 @@ header .active {
     background: rgba(0, 0, 0, 0.6);
   }
 
-  .banner-container .banner-content {
-    height: 100%;
+  .banner-container .banner-content .heading {
     padding-top: 200px;
-    padding-left: 83px;
+  padding-left: 11%;
   }
 
       .banner-container .banner-content .heading h1 {
@@ -106,6 +116,7 @@ header .active {
   height: 445px;
   padding-top: 66px;
   border-top: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0,0.075);
 }
 
   .capabilities ul {
@@ -129,17 +140,30 @@ header .active {
     }
 
     .capabilities .icon-desktop .svg-style {
-      fill: none;
-      stroke-width: 1px;
       stroke: #865;
+      stroke-width: 1px;
       vector-effect: non-scaling-stroke;
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+      fill: none;
+      animation: dash 5s linear forwards;
+      -webkit-animation: dash 5s linear forwards;
+    }
+
+    @-webkit-keyframes dash {
+      from {
+        stroke-dasharray: 0 1000;
+      }
+      to {
+        stroke-dasharray: 1000 0;
+      }
     }
 
     .capabilities h3 {
-      color: #865;
+      color: black;
       font-size: 20px;
       font-weight: normal;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Julius Sans One', sans-serif;
       margin: 36px 0 12px;
     }
 
@@ -155,14 +179,10 @@ header .active {
 
 .want-more {
   height: 200px;
-  background: #212221;
+  background: #f5f5f5;
   border-bottom: 1px solid black;
+  text-align: center;
 }
-
-  .want-more .col-md-12 {
-    height: 100%;
-    text-align: center;
-  }
 
   .want-more .col-md-12 a {
     border: 3px solid gray;

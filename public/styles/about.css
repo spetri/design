@@ -16,12 +16,16 @@ body {
   padding-left: 0;
 }
 
+.in {
+  background: rgba(0, 0, 0, 0.6);
+  transition: 1s ease;
+}
+
 header .active {
     color: white;
   }
 
   header .navbar-nav {
-    padding-left: 4%;
     background: transparent;
   }
 
@@ -36,23 +40,24 @@ header .active {
 
 .about-banner-container {
   background: url(images/keyboard.jpg);
-  height: 330px;
+  height: 430px;
   background-size: cover;
 }
 
-  .about-banner-container .about-banner-content {
-    height: 330px;
-    background: black;
+  .about-banner-container .overlay {
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.6);
   }
 
   .about-banner-container .about-banner-content .about-heading {
-    padding: 121px 5%;
+    padding: 171px 0;
     height: 100%;
-    width: 69%;
+    width: 100%;
   }  
 
     .about-banner-container .about-banner-content .about-heading h1 {
+      padding-left: 11%;
       font-size: 40px;
       color: #fff;
       font-weight: 100;
@@ -147,7 +152,7 @@ header .active {
     border: 1px solid #ccc;
     position: relative;
     -webkit-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 5px; 
     background-position-y: 0;
   }
 
@@ -221,15 +226,30 @@ header .active {
     border-top-right-radius: 0;    
   }
 
+  .work .browser:hover .bwc {
+    background-position-y: -70px;
+  }
+
+  .work .browser:hover .gitlab {
+    background-position-y: -70px;
+  }
+
+  .work .browser:hover .forekast {
+    background-position-y: -70px;
+  }
+
   .work .browser .bwc { 
+    -webkit-transition: background-position 1s ease-in-out;
     background: url(images/bwc.png);
   }
 
   .work .browser .gitlab { 
+    -webkit-transition: background-position 1s ease-in-out;
     background: url(images/gitlab.png);
   }
 
   .work .browser .forekast { 
+    -webkit-transition: background-position 1s ease-in-out;
     background: url(images/forekast.png);
   }
 
@@ -296,3 +316,5 @@ footer p {
     width: auto;
   } 
 }
+
+
