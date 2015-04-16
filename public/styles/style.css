@@ -19,7 +19,7 @@ body {
 
 @media(max-width: 1040px) {
     .capabilities {
-    height: 992px !important;
+    height: 926px !important;
   }
 }
 
@@ -114,7 +114,6 @@ header .navbar-default {
 
 .capabilities {
   height: 445px;
-  padding-top: 66px;
   border-top: 1px solid black;
   border-bottom: 1px solid rgba(0,0,0,0.075);
 }
@@ -130,7 +129,7 @@ header .navbar-default {
   }
 
   .capability-content {
-    padding: 0 14px;
+    padding: 33px 14px 0 14px;
   }
 
     .capabilities .icon-desktop {
@@ -148,9 +147,20 @@ header .navbar-default {
       fill: none;
       animation: dash 5s linear forwards;
       -webkit-animation: dash 5s linear forwards;
+      -moz-animation: dash 5s linear forwards;
+
     }
 
     @-webkit-keyframes dash {
+      from {
+        stroke-dasharray: 0 1000;
+      }
+      to {
+        stroke-dasharray: 1000 0;
+      }
+    }
+
+    @-moz-keyframes dash {
       from {
         stroke-dasharray: 0 1000;
       }
@@ -178,13 +188,16 @@ header .navbar-default {
 
 
 .want-more {
-  height: 200px;
   background: #f5f5f5;
   border-bottom: 1px solid black;
   text-align: center;
 }
 
-  .want-more .col-md-12 a {
+  .want-more .want-more-container {
+    display: inline-block;
+  }
+
+  .want-more .want-more-container a {
     border: 3px solid gray;
     border-radius: 60px;
     line-height: 46px;
@@ -194,10 +207,10 @@ header .navbar-default {
     color: gray;
     font-size: 18px;
     transition: .2s all linear;
-    margin: 5% 2%;
+    margin: 50px 10px;
   }
 
-    .want-more .col-md-12 a:hover {
+    .want-more .want-more-container a:hover {
       border-color: #1a2225;
       color: #1a2225; 
       -webkit-transform: translateX(5px);
@@ -206,7 +219,7 @@ header .navbar-default {
       transform: translateX(5px);
     }
 
-  .want-more .col-md-12 .btn::after {
+  .want-more .want-more-container .btn::after {
     border-style: solid;
     border-width: 2px 2px 0px 0;
     content: '';

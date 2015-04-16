@@ -9,11 +9,12 @@ body {
 }
 
 .col-md-3 {
-  width:33%;
+  width: 33%;
 }
 
 .col-md-4 {
   padding-left: 0;
+  padding-right: 0;
 }
 
 .in {
@@ -154,6 +155,7 @@ header .active {
     -webkit-border-radius: 5px;
     border-radius: 5px; 
     background-position-y: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
   }
 
   .work .top {
@@ -240,16 +242,19 @@ header .active {
 
   .work .browser .bwc { 
     -webkit-transition: background-position 1s ease-in-out;
+    -moz-transition: background-position 1s ease-in-out;
     background: url(images/bwc.png);
   }
 
   .work .browser .gitlab { 
     -webkit-transition: background-position 1s ease-in-out;
+    -moz-transition: background-position 1s ease-in-out;
     background: url(images/gitlab.png);
   }
 
   .work .browser .forekast { 
     -webkit-transition: background-position 1s ease-in-out;
+    -moz-transition: background-position 1s ease-in-out;
     background: url(images/forekast.png);
   }
 
