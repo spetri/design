@@ -107,7 +107,14 @@ header .navbar-default {
         font-weight: 100;
       }
 
-      .banner-container .banner-content .heading p {
+      .banner-container .banner-content .heading p:nth-child(2) {
+        font-family: "Muli";
+        color: #ddd;
+        font-size: 20px;
+      }
+
+      .banner-container .banner-content .heading p:nth-child(3) {
+        font-family: "Muli";
         color: #ddd;
         font-size: 17px;
       }

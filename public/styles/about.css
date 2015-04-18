@@ -298,6 +298,11 @@ header .active {
       width: 13px;
     }
 
+  .work-with-me {
+    background: #505897;
+    text-align: center;
+  }
+
 footer p {
   text-align: center;
   color: gray;
