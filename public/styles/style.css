@@ -42,8 +42,7 @@ body {
 }
 
 .in {
-  background: rgba(0, 0, 0, 0.6);
-  transition: 1s ease;
+  background: #f5f5f5;
 }
 
 .row {
@@ -123,6 +122,20 @@ header .navbar-default {
   height: 445px;
   border-top: 1px solid black;
   border-bottom: 1px solid rgba(0,0,0,0.075);
+}
+
+.capabilities:before {
+  content: '';
+  position: absolute;
+  max-width: 100%;
+  top: 481px;
+  border-style: inset;
+  border-top: 60px double rgba(255,255,255,0);
+  border-bottom: 60px solid #fff;
+  border-left: 50vw solid #fff;
+  border-right: 50vw solid #fff;
+  -moz-transform: scale(.9999);
+  transform: scale(.9999);
 }
 
   .capabilities ul {
