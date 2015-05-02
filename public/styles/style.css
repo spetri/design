@@ -128,7 +128,7 @@ header .navbar-default {
   content: '';
   position: absolute;
   max-width: 100%;
-  top: 481px;
+  top: 539px;
   border-style: inset;
   border-top: 60px double rgba(255,255,255,0);
   border-bottom: 60px solid #fff;
