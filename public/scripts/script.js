@@ -6,6 +6,7 @@
 
   var beginApp = function() {
     setupEvents();
+    setupNavbarAffix();
   };
 
   var setupEvents = function() {
@@ -27,6 +28,17 @@
     e.preventDefault();
     var subject = firstName.val() + " " + lastName.val() + " is contacting you.";
     window.open('mailto:sabbap@gmail.com?subject=' + subject + '&body='+ comments.val());
+  }
+
+  var setupNavbarAffix = function() {
+    $('#myAffix').affix({
+      offset: {
+        top: 100,
+        bottom: function() {
+          return (this.bottom = $('.footer').outerHeight(true))
+        }
+      }
+    })
   }
 
   window.beginApp = beginApp;

@@ -41,6 +41,7 @@ header .active {
 
 .about-banner-container {
   background: url(images/keyboard.jpg);
+  background-attachment: fixed;
   height: 430px;
   background-size: cover;
 }
