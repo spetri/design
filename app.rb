@@ -22,7 +22,6 @@ end
 
 get '/contact' do
   output = ""
-  output << partial(:top)
   output << partial(:contact)
   output << partial(:bottom)
   output
