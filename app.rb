@@ -1,14 +1,29 @@
 require 'bundler/setup'
 require 'sinatra'
+require 'sinatra/partial'
+
+set :partial_template_engine, :erb
 
 get '/' do
-  erb :index
+  output = ""
+  output << partial(:top)
+  output << partial(:index)
+  output << partial(:bottom)
+  output
 end
 
 get '/about' do
-  erb :about
+  output = ""
+  output << partial(:top)
+  output << partial(:about)
+  output << partial(:bottom)
+  output
 end
 
 get '/contact' do
-  erb :contact
+  output = ""
+  output << partial(:top)
+  output << partial(:contact)
+  output << partial(:bottom)
+  output
 end

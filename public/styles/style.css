@@ -11,22 +11,11 @@ body {
   background: #fff;
 }
 
-@media(min-width: 1040px) {
-  .capabilities ul li {
-    width: 33%;
+@media (max-width: 520px) {
+  .want-more .want-more-container a {
+    margin: 20px 44px 20px 44px !important;
   }
 }
-
-@media(max-width: 1040px) {
-    .capabilities {
-    height: 926px !important;
-  }
-}
-
-@media(max-width: 755px) {
-  .capabilities {
-      height: 1131px !important
-  }
 
   header nav ul li a {
     font-size: 16px !important;
@@ -119,7 +108,6 @@ header .navbar-default {
       }
 
 .capabilities {
-  height: 445px;
   border-top: 1px solid black;
   border-bottom: 1px solid rgba(0,0,0,0.075);
 }
@@ -146,6 +134,7 @@ header .navbar-default {
   .capabilities ul li {
     text-align: center;
     float: left;
+    padding: 68px 0;
   }
 
   .capability-content {
