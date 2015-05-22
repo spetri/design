@@ -121,7 +121,7 @@ header .navbar-default {
   border-top: 60px double rgba(255,255,255,0);
   border-bottom: 60px solid #fff;
   border-left: 50vw solid #fff;
-  border-right: 50vw solid #fff;
+  border-right: 49.99vw solid #fff;
   -moz-transform: scale(.9999);
   transform: scale(.9999);
 }
