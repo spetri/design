@@ -1,0 +1,21 @@
+%footer
+  %ul
+    %a{:href => '/'}
+      %li Home
+    %a{:href => '/about'}
+      %li About
+    %a{:href => 'mailto:sabbap@gmail.com?Subject=Hi there!', :target => '_top'}
+      %li Contact
+    %a{:href => '/resume/sabbapetri_resume.pdf', :target => '_blank'}
+      %li View Resume
+    %p
+      Copyright 2015 & developed by Sabba Petri
+
+%script{:type => "text/javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"}
+%script{:type => "text/javascript", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"}
+%script{:type => "text/javascript", :src => "scripts/script.js"}
+
+:javascript
+  $(document).ready(function() {
+    startApp();
+  });

@@ -1,0 +1,71 @@
+%body
+  %header
+    %div
+      %nav.navbar.navbar-default{:data => {:spy => 'affix'}}
+        %div.container-fluid
+          %button.navbar-toggle.collapsed{:type => 'button', :data => {:toggle => 'collapsed', :target => '#bs-example-navbar-collapsed-1'}}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        %div#bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li
+              %a.active{:href => '/'}
+                %i.fa.fa-heart-o
+            %li
+              %a{:href => '/about'} PORTFOLIO
+            %li
+              %a{:href => '/resume/sabbapetri_resume.pdf', :target => '_blank'} RESUME
+            %li
+              %a{:href => '/contact'} CONTACT
+
+  .banner-container
+    .row.overlay
+      .hidden-xs.hidden-sm.col-md-1
+      .col-xs-12.col-sm-12.col-md-5.banner-content
+        .heading
+          %h1 
+            W E L C O M E
+          %p
+            My name is Sabba.
+          %p
+            I love to design, create, and ship premium products and services.
+      .hidden-xs.hidden-sm.col-md-6
+
+  .row.capabilities
+    %ul
+      %li.col-xs-12.col-sm-12.col-md-4
+        .capability-content
+          .icon-desktop
+            %svg.svg-icon{:viewBox => '0 0 20 20'}
+              %path.svg-style{:d => 'M12.173,16.086c0.72,0,1.304-0.584,1.304-1.305V6.089c0-0.72-0.584-1.304-1.304-1.304c-0.721,0-1.305,0.584-1.305,1.304v8.692C10.868,15.502,11.452,16.086,12.173,16.086z M11.738,6.089c0-0.24,0.194-0.435,0.435-0.435s0.435,0.194,0.435,0.435v8.692c0,0.24-0.194,0.436-0.435,0.436s-0.435-0.195-0.435-0.436V6.089zM16.52,16.086c0.72,0,1.304-0.584,1.304-1.305v-11.3c0-0.72-0.584-1.304-1.304-1.304c-0.721,0-1.305,0.584-1.305,1.304v11.3C15.215,15.502,15.799,16.086,16.52,16.086z M16.085,3.481c0-0.24,0.194-0.435,0.435-0.435s0.435,0.195,0.435,0.435v11.3c0,0.24-0.194,0.436-0.435,0.436s-0.435-0.195-0.435-0.436V3.481z M3.48,16.086c0.72,0,1.304-0.584,1.304-1.305v-3.477c0-0.72-0.584-1.304-1.304-1.304c-0.72,0-1.304,0.584-1.304,1.304v3.477C2.176,15.502,2.76,16.086,3.48,16.086z M3.045,11.305c0-0.24,0.194-0.435,0.435-0.435c0.24,0,0.435,0.194,0.435,0.435v3.477c0,0.24-0.195,0.436-0.435,0.436c-0.24,0-0.435-0.195-0.435-0.436V11.305z M18.258,16.955H1.741c-0.24,0-0.435,0.194-0.435,0.435s0.194,0.435,0.435,0.435h16.517c0.24,0,0.435-0.194,0.435-0.435S18.498,16.955,18.258,16.955z M7.826,16.086c0.72,0,1.304-0.584,1.304-1.305V8.696c0-0.72-0.584-1.304-1.304-1.304S6.522,7.977,6.522,8.696v6.085C6.522,15.502,7.106,16.086,7.826,16.086z M7.392,8.696c0-0.239,0.194-0.435,0.435-0.435s0.435,0.195,0.435,0.435v6.085c0,0.24-0.194,0.436-0.435,0.436s-0.435-0.195-0.435-0.436V8.696z'}
+          %h3
+            Product Management & Design
+          %p
+            I bridge the technical & business worlds by designing technologies with creative engineers. I work with cross-functional teams to break down complex problems into <b>systematic</b> steps, driving products from conception to launch.
+      %li.col-xs-12.col-sm-12.col-md-4
+        .capability-content
+          .icon-desktop
+            %svg.svg-icon{:viewBox => '0 0 20 20'}
+              %path.svg-style{:d => 'M17.125,1.375H2.875c-0.828,0-1.5,0.672-1.5,1.5v11.25c0,0.828,0.672,1.5,1.5,1.5H7.75v2.25H6.625c-0.207,0-0.375,0.168-0.375,0.375s0.168,0.375,0.375,0.375h6.75c0.207,0,0.375-0.168,0.375-0.375s-0.168-0.375-0.375-0.375H12.25v-2.25h4.875c0.828,0,1.5-0.672,1.5-1.5V2.875C18.625,2.047,17.953,1.375,17.125,1.375z M11.5,17.875h-3v-2.25h3V17.875zM17.875,14.125c0,0.414-0.336,0.75-0.75,0.75H2.875c-0.414,0-0.75-0.336-0.75-0.75v-1.5h15.75V14.125z M17.875,11.875H2.125v-9c0-0.414,0.336-0.75,0.75-0.75h14.25c0.414,0,0.75,0.336,0.75,0.75V11.875z M10,14.125c0.207,0,0.375-0.168,0.375-0.375S10.207,13.375,10,13.375s-0.375,0.168-0.375,0.375S9.793,14.125,10,14.125z'}
+          %h3
+            Front-end Development
+          %p
+            From a visual mockup to a fully-functional application, I can design, build, and test your site to perfection.
+
+      %li.col-xs-12.col-sm-12.col-md-4
+        .capability-content
+          .icon-desktop
+            %svg.svg-icon{:viewBox => '0 0 20 20'}
+              %path.svg-style{:d => 'M13.22,2.984c-1.125,0-2.504,0.377-3.53,1.182C8.756,3.441,7.502,2.984,6.28,2.984c-2.6,0-4.714,2.116-4.714,4.716c0,0.32,0.032,0.644,0.098,0.96c0.799,4.202,6.781,7.792,7.46,8.188c0.193,0.111,0.41,0.168,0.627,0.168c0.187,0,0.376-0.041,0.55-0.127c0.011-0.006,1.349-0.689,2.91-1.865c0.021-0.016,0.043-0.031,0.061-0.043c0.021-0.016,0.045-0.033,0.064-0.053c3.012-2.309,4.6-4.805,4.6-7.229C17.935,5.1,15.819,2.984,13.22,2.984z M12.544,13.966c-0.004,0.004-0.018,0.014-0.021,0.018s-0.018,0.012-0.023,0.016c-1.423,1.076-2.674,1.734-2.749,1.771c0,0-6.146-3.576-6.866-7.363C2.837,8.178,2.811,7.942,2.811,7.7c0-1.917,1.554-3.47,3.469-3.47c1.302,0,2.836,0.736,3.431,1.794c0.577-1.121,2.161-1.794,3.509-1.794c1.914,0,3.469,1.553,3.469,3.47C16.688,10.249,14.474,12.495,12.544,13.966z'}
+          %h3
+            Dependable & Hardworking
+          %p
+            From building large systems to contributing toward Open Source with varying teams, I've developed a strong aptitude toward team collaboration, interpersonal communication skills, and quick learning.
+
+  .want-more.row
+    .col-xs-12.col-sm-12.col-md-12.want-more-container
+      %a.btn.btn-default{:href => '/about'} View Portfolio
+      %a.btn.btn-default{:href => '/resume/sabbapetri_resume.pdf', :target => '_blank'} Resume
+      %a.btn.btn-default{:href => 'mailto:sabbap@gmail.com?Subject=Hi there!', :target => '_top'} Contact

@@ -223,7 +223,7 @@ header .active {
       padding-left: 10px;
     }
 
-    .work .browser .bar span .detail {
+    .work .browser .bar .detail {
       color: darkgray;
       font-size: 11px;
     }

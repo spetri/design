@@ -2,8 +2,6 @@ require 'bundler/setup'
 require 'sinatra'
 require 'sinatra/partial'
 
-set :partial_template_engine, :erb
-
 get '/' do
   output = ""
   output << partial(:top)
@@ -23,5 +21,6 @@ end
 get '/contact' do
   output = ""
   output << partial(:contact)
+  output << partial(:bottom)
   output
 end

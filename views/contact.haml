@@ -1,0 +1,57 @@
+!!! 5
+%html.no-js
+  %head
+    %meta{:charset => 'utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1'}
+    %link{:href => 'styles/favicon-heart-o.ico', :rel => 'shortcut icon'}
+    %link{:type => 'text/css', :href => 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css', :rel => 'stylesheet'}
+    %link{:href => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css', :rel => 'stylesheet'}
+    %link{:href => 'styles/style.css', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => 'styles/contact.css', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => 'http://fonts.googleapis.com/css?family=Muli:300,400', :rel => 'stylesheet', :type => 'text/css'}
+    %title Sabba Petri Site
+
+%body
+  %header
+    %div
+      %nav.navbar.navbar-default{:data => {:spy => 'affix'}}
+        %div.container-fluid
+          %button.navbar-toggle.collapsed{:type => 'button', :data => {:toggle => 'collapsed', :target => '#bs-example-navbar-collapsed-1'}}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        %div#bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => '/'}
+                %i.fa.fa-heart-o
+            %li
+              %a{:href => '/about'} PORTFOLIO
+            %li
+              %a{:href => '/resume/sabbapetri_resume.pdf', :target => '_blank'} RESUME
+            %li
+              %a.active{:href => '/contact'} CONTACT
+
+  .about-banner-container
+    .row.overlay
+      .hidden-xs.hidden-sm.col-md-1
+      .col-xs-12.col-sm-12.col-md-5.about-banner-content
+        .about-heading
+          %h1 Contact
+      .hidden-xs.hidden-sm.col-md-6
+
+  .form-container.row
+    .form-content.col-md-12
+      %h1 Contact Me
+      %form#contact
+        %input#first-name{:type => 'text', :maxlength => '20'}
+        %label First Name
+        %input#last-name{:type => 'text', :maxlength => '20'}
+        %label Last Name
+        %input#comments{:type => 'text', :maxlength => '400'}
+        %label What's Up?
+        %input#submit{:type => 'submit', :value => 'Submit'}
+
+

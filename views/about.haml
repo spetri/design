@@ -1,0 +1,135 @@
+%body
+  %header
+    %div
+      %nav.navbar.navbar-default
+        .container-fluid
+          %button.navbar-toggle.collapsed{:type => 'button', :data => {:toggle => 'collapse', :target => '#bs-example-navbar-collapse-1'}}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        %div#bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => '/'}
+                %i.fa.fa-heart-o
+            %li
+              %a.active{:href => '/about'} PORTFOLIO
+            %li
+              %a{:href => '/resume/sabbapetri_resume.pdf', :target => '_blank'} RESUME
+            %li
+              %a{:href => '/contact'} CONTACT
+
+  .about-banner-container
+    .row.overlay
+      .hidden-xs.hidden-sm.col-md-1
+      .col-xs-12.col-sm-12.col-md-5.about-banner-content
+        .about-heading
+          %h1 Portfolio
+      .hidden-xs.hidden-sm.col-md-6
+
+  .row.work.off-white
+    %h1 Worked From Large Organizations
+    .hidden-xs.hidden-sm.col-md-1
+    .col-xs-12.col-sm-12.col-md-6
+      .browser
+        .top
+          %span.buttons
+            %span.button
+            %span.button
+            %span.button
+          %span.bar
+            %span https://bahai.bwc.org/
+            %span.detail - Baha'i World Centre
+        .bwc
+    .col-xs-12.col-sm-12.col-md-4
+      .work-detail
+        %h4 Baha'i World Centre
+        %p
+          The worldwide center of the Baha’i International Community, a UN-recognized NGO administrating affairs for over 184 countries and territories with over 6 million members.
+        .know-more
+          %a.btn.btn-default{:href => 'http://www.bahai.org/', :target => '_blank'} Visit Page
+    .hidden-xs.hidden-sm.col-md-1
+  
+  .row.work
+    %h1 To Small, Thriving Startups
+    .hidden-xs.hidden-sm.col-md-1
+    .col-xs-12.col-sm-12.col-md-4
+      .work-detail
+        %h4 GitLab B.V
+        %p
+          YC-Backed GitLab is a feature-rich Git repository management, issue-tracking, wiki system, used by companies such as IBM, NASA, AT&T, Bell, Expedia, and more.
+        .know-more
+          %a.btn.btn-default{:href => 'http://about.gitlab.com', :target => '_blank'} Visit Page
+    .hidden-xs.hidden-sm.col-md-1
+    .col-xs-12.col-sm-12.col-md-5
+      .browser
+        .top
+          %span.buttons
+            %span.button
+            %span.button
+            %span.button
+          %span.bar
+            %span http://gitlab.com/
+            %span.detail - GitLab B.V.
+        .gitlab
+  
+  .row.work.off-white
+    %h1 And Open-Source Projects
+    .hidden-xs.hidden-sm.col-md-1
+    .col-xs-12.col-sm-12.col-md-6
+      .browser
+        .top
+          %span.buttons
+            %span.button
+            %span.button
+            %span.button
+          %span.bar
+            %span https://forekast.com/ 
+            %span.detail - Forekast
+        .forekast
+    .col-xs-12.col-sm-12.col-md-4
+      .work-detail
+        %h4 Forekast
+        %p 
+          Viewed as the "Crowdsourced Calendar of the Internet", Forekast displays upcoming global and national (and soon, local) events, provided by the community at large.
+        .know-more
+          %a.btn.btn-default{:href => 'https://forekast.com/', :target => '_blank'} Visit Page
+    .hidden-xs.hidden-sm.col-md-1
+
+  .row.loves
+    .col-md-12
+      %h1 Personal Interests
+      %ul
+        .col-xs-12.col-sm-12.col-md-4
+          %li
+            .loves-content
+              .icon-area
+                %svg.svg-icon{:viewBox => '0 0 1024 1024'}
+                  %path.svg-style{:d => 'M0 896v-736h992v736h-992zM192 576h-32v-384h-128v672h160v-288zM384 576h-32v-384h-96v384h-32v288h160v-288zM576 576h-32v-384h-96v384h-32v288h160v-288zM640 192v384h-32v288h160v-288h-32v-384h-96zM960 192h-128v384h-32v288h160v-672z'}
+              %h3 Practicing & Performing Piano
+              %p
+                Since my early days, I've loved practicing a range of music, from Bach preludes, to intricate Rachmaninoff preludes, to beautiful Einaudi suites.
+        .col-xs-12.col-sm-12.col-md-4
+          %li
+            .loves-content
+              .icon-area
+                %svg.svg-icon{:viewBox => '0 0 1280 1024'}
+                  %path.svg-style{:d => 'M832 736l96 96 320-320-320-320-96 96 224 224z'}
+                  %path.svg-style{:d => 'M448 288l-96-96-320 320 320 320 96-96-224-224z'}
+                  %path.svg-style{:d => 'M701.298 150.519l69.468 18.944-191.987 704.026-69.468-18.944 191.987-704.026z'}
+              %h3 Pushing Great Code
+              %p
+                I enjoy pushing, churning, and contributing code for companies and organizations who have visions to change people's lives for the better.
+        .col-xs-12.col-sm-12.col-md-4
+          %li
+            .loves-content
+              .icon-area
+                %svg.svg-icon{:viewBox => '0 0 1024 1024'}
+                  %path.svg-style{:d => 'M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM512 960.002c-62.958 0-122.872-13.012-177.23-36.452l233.148-262.29c5.206-5.858 8.082-13.422 8.082-21.26v-96c0-17.674-14.326-32-32-32-112.99 0-232.204-117.462-233.374-118.626-6-6.002-14.14-9.374-22.626-9.374h-128c-17.672 0-32 14.328-32 32v192c0 12.122 6.848 23.202 17.69 28.622l110.31 55.156v187.886c-116.052-80.956-192-215.432-192-367.664 0-68.714 15.49-133.806 43.138-192h116.862c8.488 0 16.626-3.372 22.628-9.372l128-128c6-6.002 9.372-14.14 9.372-22.628v-77.412c40.562-12.074 83.518-18.588 128-18.588 70.406 0 137.004 16.26 196.282 45.2-4.144 3.502-8.176 7.164-12.046 11.036-36.266 36.264-56.236 84.478-56.236 135.764s19.97 99.5 56.236 135.764c36.434 36.432 85.218 56.264 135.634 56.26 3.166 0 6.342-0.080 9.518-0.236 13.814 51.802 38.752 186.656-8.404 372.334-0.444 1.744-0.696 3.488-0.842 5.224-81.324 83.080-194.7 134.656-320.142 134.656z'}
+              %h3 Developing Communities
+              %p
+                If you don't find me pushing code or playing piano, you may find me in communities, working alongside others to grow communities organically through various processes of social and moral development.
+
+
+
